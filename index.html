@@ -24,7 +24,7 @@ nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--panel);bor
 nav a{text-decoration:none;color:var(--ink);font-weight:600;white-space:nowrap}
 main{max-width:980px;margin:0 auto;padding:0 1.2rem}
 section{padding:3rem 0 1rem}
-.hero{display:grid;grid-template-columns:1fr 200px;gap:2rem;align-items:center;padding-top:3rem}
+.hero{display:block;padding-top:3rem}
 .photo{width:200px;height:200px;border-radius:50%;background:var(--line);display:grid;place-items:center;color:var(--muted);text-align:center;font-size:.9rem}
 .sub{color:var(--muted);font-size:1.15rem;margin:0 0 1.2rem}
 .btn{display:inline-block;background:var(--hot);color:var(--hotink);padding:.65rem 1.2rem;border-radius:6px;font-weight:600;text-decoration:none;border:0;font:600 1rem "Source Sans 3",sans-serif;cursor:pointer}
@@ -61,9 +61,8 @@ footer{text-align:center;color:var(--muted);padding:3rem 1rem 2rem;font-size:.9r
 <h1>Étudiant en informatique, systèmes et réseaux</h1>
 <p class="sub">1re année de BTS SIO option SISR — CNED (enseignement à distance)</p>
 <p><b>Taslim SAIDANI</b></p>
-<a class="btn" href="#" onclick="alert('Ajoutez ici le lien vers votre CV au format PDF.');return false;">Voir mon CV (PDF)</a>
+<a class="btn" href="cv.pdf" target="_blank" rel="noopener">Voir mon CV (PDF)</a>
 </div>
-<div class="photo" role="img" aria-label="Emplacement de la photo">Votre<br>photo</div>
 </section>
 
 <section id="profil">
@@ -77,7 +76,7 @@ footer{text-align:center;color:var(--muted);padding:3rem 1rem 2rem;font-size:.9r
 <ul class="tl">
 <li><b>BTS SIO (Services informatiques aux organisations), option SISR (Solutions d'infrastructure, systèmes et réseaux)</b><span>Septembre 2026 – en cours — CNED (Centre national d'enseignement à distance), Chasseneuil-du-Poitou, formation à distance</span><br>Formation qui prépare à installer, administrer et sécuriser les réseaux et les serveurs d'une organisation, et à aider les utilisateurs.</li>
 <li><b>Formation en soins infirmiers (2 ans)</b><span>2024 – 2026 — IFSI de Metz, site du Saulcy</span><br>Stages en FAM, EHPAD, chirurgie et médecine.</li>
-<li><b>Baccalauréat général</b><span>Juillet 2024 — [Lycée, ville] — [Mention éventuelle]</span></li>
+<li><b>Baccalauréat général</b><span>Juillet 2024 — Lycée Robert Schuman, Metz</span></li>
 </ul>
 <h3>Certifications et autres formations</h3>
 <ul><li>Pix (compétences numériques) — septembre 2023</li><li>AFGSU (Attestation de formation aux gestes et soins d'urgence) — mai 2024</li></ul>
@@ -85,13 +84,19 @@ footer{text-align:center;color:var(--muted);padding:3rem 1rem 2rem;font-size:.9r
 
 <section id="competences">
 <h2>Compétences techniques</h2>
+<p>Je suis en 1re année : je construis mes compétences au fil de la formation. Je distingue ce que je pratique déjà de ce qui est au programme.</p>
+<h3>Ce que je pratique déjà</h3>
 <div class="skills">
-<div><h3>Systèmes</h3><ul><li>Windows Server</li><li>Active Directory</li><li>Linux (Debian, Ubuntu)</li><li>Virtualisation (VirtualBox, Proxmox)</li></ul></div>
-<div><h3>Réseaux</h3><ul><li>Adressage IP, VLAN</li><li>DHCP, DNS</li><li>Routeurs et commutateurs</li><li>Pare-feu (pfSense)</li></ul></div>
-<div><h3>Services et support</h3><ul><li>GLPI (inventaire, tickets)</li><li>Supervision (Zabbix)</li><li>Sauvegardes</li><li>Serveur web (Apache)</li></ul></div>
-<div><h3>Outils</h3><ul><li>C (en apprentissage : OpenClassrooms, CS50 de Harvard)</li><li>Git, GitHub</li><li>PowerShell, Bash</li><li>Packet Tracer</li></ul></div>
+<div><h3>Programmation</h3><ul><li>Langage C (en apprentissage : OpenClassrooms, CS50 de Harvard)</li></ul></div>
+<div><h3>Outils en ligne</h3><ul><li>GitHub (publication de ce portfolio avec GitHub Pages)</li><li>Compétences numériques (certification Pix)</li></ul></div>
 </div>
-<p style="color:var(--muted)">Gardez seulement ce que vous avez vraiment étudié.</p>
+<h3 style="margin-top:1.5rem">Au programme de ma formation (en cours d'acquisition)</h3>
+<div class="skills">
+<div><h3>Systèmes</h3><ul><li>Windows Server, Active Directory</li><li>Linux</li><li>Virtualisation</li></ul></div>
+<div><h3>Réseaux</h3><ul><li>Adressage IP, VLAN</li><li>DHCP, DNS</li><li>Pare-feu</li></ul></div>
+<div><h3>Services et support</h3><ul><li>Gestion de parc et tickets (GLPI)</li><li>Supervision</li><li>Sauvegardes</li></ul></div>
+</div>
+<p style="color:var(--muted)">Je mettrai cette liste à jour à chaque nouvel atelier réalisé.</p>
 </section>
 
 <section id="realisations">
@@ -167,8 +172,8 @@ footer{text-align:center;color:var(--muted);padding:3rem 1rem 2rem;font-size:.9r
 <li><b>Licence professionnelle cybersécurité ou 3e année de licence en informatique</b><span>[2028 – 2029], si possible en alternance</span><br>Gagner de l'expérience en entreprise et atteindre le niveau bac+3.</li>
 <li><b>Master en cybersécurité</b><span>[2029 – 2031]</span><br>Atteindre le niveau bac+5. Je cible les formations labellisées par l'ANSSI (SecNumedu).</li>
 </ul>
-<h3>Ce que je fais en attendant</h3>
-<ul><li>Apprentissage du langage C (OpenClassrooms, CS50 de Harvard)</li><li>Exercices de sécurité en ligne : [TryHackMe, Root-Me — à confirmer selon ce que vous faites vraiment]</li><li>Certification visée : [CCNA ou formation ANSSI]</li></ul>
+<h3>Ce que je fais et ce que je prévois</h3>
+<ul><li>En cours : apprentissage du langage C (OpenClassrooms, CS50 de Harvard)</li><li>Prévu : commencer des exercices de sécurité en ligne (TryHackMe, Root-Me)</li></ul>
 </section>
 
 <section id="contact">
@@ -176,7 +181,7 @@ footer{text-align:center;color:var(--muted);padding:3rem 1rem 2rem;font-size:.9r
 <p><b>Ville :</b> Metz<br>
 <b>Téléphone :</b> 06 16 61 82 14<br>
 <b>Courriel :</b> <a href="mailto:saidani.taslim@yahoo.com">saidani.taslim@yahoo.com</a><br>
-<b>GitHub :</b> <a href="https://github.com/milsatkiru-coder">github.com/milsatkiru-coder</a></p>
+<b>GitHub :</b> <a href="https://github.com/Saidani-Taslim">github.com/Saidani-Taslim</a></p>
 <form onsubmit="var f=this;location.href='mailto:saidani.taslim@yahoo.com?subject='+encodeURIComponent(f.sujet.value)+'&body='+encodeURIComponent(f.msg.value);return false;">
 <label>Sujet<input name="sujet" required></label>
 <label>Message<textarea name="msg" rows="5" required></textarea></label>
