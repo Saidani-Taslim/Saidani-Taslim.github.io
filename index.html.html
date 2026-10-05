@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio BTS SIO SISR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f5;--panel:#fff;--ink:#14263a;--muted:#54657a;--line:#cfd8e1;--accent:#0b6e7f;--hot:#e0611d;--hotink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a26;--panel:#152536;--ink:#e8eef4;--muted:#9fb0c1;--line:#26394d;--accent:#5cc5d6;--hot:#ff8a4c;--hotink:#1a1008}}
+:root[data-theme="dark"]{--bg:#0e1a26;--panel:#152536;--ink:#e8eef4;--muted:#9fb0c1;--line:#26394d;--accent:#5cc5d6;--hot:#ff8a4c;--hotink:#1a1008}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:700}
+h2{font-size:1.7rem;font-weight:700}
+h3{font-size:1.1rem;font-weight:500}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--panel);border-bottom:1px solid var(--line);display:flex;gap:1.1rem;padding:.7rem 1.2rem;overflow-x:auto;z-index:5}
+nav a{text-decoration:none;color:var(--ink);font-weight:600;white-space:nowrap}
+main{max-width:980px;margin:0 auto;padding:0 1.2rem}
+section{padding:3rem 0 1rem}
+.hero{display:grid;grid-template-columns:1fr 200px;gap:2rem;align-items:center;padding-top:3rem}
+.photo{width:200px;height:200px;border-radius:50%;background:var(--line);display:grid;place-items:center;color:var(--muted);text-align:center;font-size:.9rem}
+.sub{color:var(--muted);font-size:1.15rem;margin:0 0 1.2rem}
+.btn{display:inline-block;background:var(--hot);color:var(--hotink);padding:.65rem 1.2rem;border-radius:6px;font-weight:600;text-decoration:none;border:0;font:600 1rem "Source Sans 3",sans-serif;cursor:pointer}
+.box{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--hot);padding:1rem 1.2rem;border-radius:6px;margin-top:1rem}
+.tl{border-left:3px solid var(--accent);margin:0;padding:0 0 0 1.2rem;list-style:none}
+.tl li{margin-bottom:1.3rem}
+.tl b{display:block}
+.tl span{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.skills div,.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem}
+.skills ul{margin:.3rem 0 0;padding-left:1.1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+.thumb{height:130px;border-radius:6px;background:var(--line);display:grid;place-items:center;color:var(--muted);font-size:.9rem;margin-bottom:.8rem}
+.tag{display:inline-block;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:.1rem .7rem;font-size:.85rem;margin:.15rem .2rem .15rem 0}
+details summary{cursor:pointer;color:var(--accent);font-weight:600;margin-top:.6rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--panel)}
+th,td{border:1px solid var(--line);padding:.5rem .7rem;text-align:left;font-size:.95rem}
+form{display:grid;gap:.8rem;max-width:520px}
+label{font-weight:600;display:grid;gap:.25rem}
+input,textarea{font:inherit;padding:.6rem;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink)}
+footer{text-align:center;color:var(--muted);padding:3rem 1rem 2rem;font-size:.9rem}
+@media (max-width:700px){.hero{grid-template-columns:1fr}.photo{order:-1;width:140px;height:140px}}
+</style>
+</head>
+<body>
+<nav aria-label="Navigation">
+<a href="#accueil">Accueil</a><a href="#profil">Profil</a><a href="#parcours">Parcours</a><a href="#competences">Compétences</a><a href="#realisations">Réalisations</a><a href="#projet">Projet</a><a href="#contact">Contact</a>
+</nav>
+<main>
+
+<section id="accueil" class="hero">
+<div>
+<h1>Étudiant en informatique, systèmes et réseaux</h1>
+<p class="sub">1re année de BTS SIO option SISR — CNED (enseignement à distance)</p>
+<p><b>Taslim SAIDANI</b></p>
+<a class="btn" href="#" onclick="alert('Ajoutez ici le lien vers votre CV au format PDF.');return false;">Voir mon CV (PDF)</a>
+</div>
+<div class="photo" role="img" aria-label="Emplacement de la photo">Votre<br>photo</div>
+</section>
+
+<section id="profil">
+<h2>Profil</h2>
+<p>Après deux ans de formation en soins infirmiers et des stages en EHPAD, en chirurgie et en médecine, je me réoriente vers l'informatique. Je suis en BTS SIO option SISR depuis septembre 2026. Je vise un poste en systèmes et réseaux. Mon objectif est de poursuivre en licence, puis en master de cybersécurité.</p>
+<div class="box"><b>Je recherche un stage en systèmes et réseaux</b> de 4 à 5 semaines, à réaliser entre mai et août 2027.</div>
+</section>
+
+<section id="parcours">
+<h2>Parcours de formation</h2>
+<ul class="tl">
+<li><b>BTS SIO (Services informatiques aux organisations), option SISR (Solutions d'infrastructure, systèmes et réseaux)</b><span>Septembre 2026 – en cours — CNED (Centre national d'enseignement à distance), Chasseneuil-du-Poitou, formation à distance</span><br>Formation qui prépare à installer, administrer et sécuriser les réseaux et les serveurs d'une organisation, et à aider les utilisateurs.</li>
+<li><b>Formation en soins infirmiers (2 ans)</b><span>2024 – 2026 — IFSI de Metz, site du Saulcy</span><br>Stages en FAM, EHPAD, chirurgie et médecine.</li>
+<li><b>Baccalauréat général</b><span>Juillet 2024 — [Lycée, ville] — [Mention éventuelle]</span></li>
+</ul>
+<h3>Certifications et autres formations</h3>
+<ul><li>Pix (compétences numériques) — septembre 2023</li><li>AFGSU (Attestation de formation aux gestes et soins d'urgence) — mai 2024</li></ul>
+</section>
+
+<section id="competences">
+<h2>Compétences techniques</h2>
+<div class="skills">
+<div><h3>Systèmes</h3><ul><li>Windows Server</li><li>Active Directory</li><li>Linux (Debian, Ubuntu)</li><li>Virtualisation (VirtualBox, Proxmox)</li></ul></div>
+<div><h3>Réseaux</h3><ul><li>Adressage IP, VLAN</li><li>DHCP, DNS</li><li>Routeurs et commutateurs</li><li>Pare-feu (pfSense)</li></ul></div>
+<div><h3>Services et support</h3><ul><li>GLPI (inventaire, tickets)</li><li>Supervision (Zabbix)</li><li>Sauvegardes</li><li>Serveur web (Apache)</li></ul></div>
+<div><h3>Outils</h3><ul><li>C (en apprentissage : OpenClassrooms, CS50 de Harvard)</li><li>Git, GitHub</li><li>PowerShell, Bash</li><li>Packet Tracer</li></ul></div>
+</div>
+<p style="color:var(--muted)">Gardez seulement ce que vous avez vraiment étudié.</p>
+</section>
+
+<section id="realisations">
+<h2>Réalisations professionnelles</h2>
+<p class="box">Les trois fiches ci-dessous sont des <b>exemples à remplacer</b> par vos vraies réalisations (ateliers, puis stage).</p>
+<div class="grid">
+
+<article class="card">
+<div class="thumb">Capture d'écran</div>
+<h3>Installation d'un parc avec GLPI</h3>
+<p>[Description courte : ce que vous avez installé, pour quel besoin.]</p>
+<p><span class="tag">GLPI</span><span class="tag">[Mois 2026]</span><span class="tag">Atelier</span></p>
+<details><summary>Voir le détail</summary>
+<p><b>Cadre :</b> [atelier en classe / stage chez ...]<br><b>Description détaillée :</b> [étapes, captures, schémas ou PDF à télécharger]<br><b>Lien :</b> [GitHub ou PDF]</p>
+<p><b>Compétences du bloc 1 :</b> recenser et identifier les ressources numériques ; collecter, suivre et orienter des demandes.</p></details>
+</article>
+
+<article class="card">
+<div class="thumb">Capture d'écran</div>
+<h3>Mise en place d'un domaine Active Directory</h3>
+<p>[Description courte.]</p>
+<p><span class="tag">Windows Server</span><span class="tag">[Mois 2026]</span><span class="tag">Atelier</span></p>
+<details><summary>Voir le détail</summary>
+<p><b>Cadre :</b> [...]<br><b>Description détaillée :</b> [...]<br><b>Lien :</b> [...]</p>
+<p><b>Compétences du bloc 1 :</b> mettre en place et vérifier les niveaux d'habilitation ; déployer un service.</p></details>
+</article>
+
+<article class="card">
+<div class="thumb">Capture d'écran</div>
+<h3>Sauvegarde automatique de serveurs</h3>
+<p>[Description courte.]</p>
+<p><span class="tag">[Outil]</span><span class="tag">[Mois 2026]</span><span class="tag">Stage</span></p>
+<details><summary>Voir le détail</summary>
+<p><b>Cadre :</b> [...]<br><b>Description détaillée :</b> [...]<br><b>Lien :</b> [...]</p>
+<p><b>Compétences du bloc 1 :</b> gérer des sauvegardes ; vérifier les conditions de la continuité d'un service.</p></details>
+</article>
+
+</div>
+
+<h3 style="margin-top:2rem">Compétences du bloc 1 couvertes par vos réalisations</h3>
+<p style="color:var(--muted)">Le jury attend que l'ensemble de vos réalisations couvre toutes les compétences. Cochez au fur et à mesure.</p>
+<div class="scroll"><table>
+<tr><th>Domaine</th><th>Compétence</th><th>Réalisation</th></tr>
+<tr><td rowspan="6">Gérer le patrimoine informatique</td><td>Recenser et identifier les ressources numériques</td><td>[ ]</td></tr>
+<tr><td>Exploiter des référentiels, normes et standards</td><td>[ ]</td></tr>
+<tr><td>Mettre en place et vérifier les niveaux d'habilitation</td><td>[ ]</td></tr>
+<tr><td>Vérifier les conditions de la continuité d'un service</td><td>[ ]</td></tr>
+<tr><td>Gérer des sauvegardes</td><td>[ ]</td></tr>
+<tr><td>Vérifier le respect des règles d'utilisation des ressources</td><td>[ ]</td></tr>
+<tr><td rowspan="3">Répondre aux incidents et aux demandes</td><td>Collecter, suivre et orienter des demandes</td><td>[ ]</td></tr>
+<tr><td>Traiter des demandes sur les services réseau et système</td><td>[ ]</td></tr>
+<tr><td>Traiter des demandes sur les applications</td><td>[ ]</td></tr>
+<tr><td rowspan="3">Développer la présence en ligne</td><td>Valoriser l'image de l'organisation sur les médias numériques</td><td>[ ]</td></tr>
+<tr><td>Référencer les services en ligne et mesurer leur visibilité</td><td>[ ]</td></tr>
+<tr><td>Participer à l'évolution d'un site Web</td><td>[ ]</td></tr>
+<tr><td rowspan="3">Travailler en mode projet</td><td>Analyser les objectifs et l'organisation d'un projet</td><td>[ ]</td></tr>
+<tr><td>Planifier les activités</td><td>[ ]</td></tr>
+<tr><td>Évaluer les indicateurs de suivi et analyser les écarts</td><td>[ ]</td></tr>
+<tr><td rowspan="3">Mettre à disposition un service</td><td>Réaliser les tests d'intégration et d'acceptation</td><td>[ ]</td></tr>
+<tr><td>Déployer un service</td><td>[ ]</td></tr>
+<tr><td>Accompagner les utilisateurs</td><td>[ ]</td></tr>
+<tr><td rowspan="3">Organiser son développement professionnel</td><td>Mettre en place son environnement d'apprentissage personnel</td><td>[ ]</td></tr>
+<tr><td>Mettre en œuvre des outils et stratégies de veille</td><td>[ ]</td></tr>
+<tr><td>Gérer son identité professionnelle et son projet</td><td>[ ]</td></tr>
+</table></div>
+</section>
+
+<section id="projet">
+<h2>Projet professionnel</h2>
+<p>Mon objectif est de devenir spécialiste en cybersécurité. Voici mon plan :</p>
+<ul class="tl">
+<li><b>BTS SIO option SISR</b><span>2026 – 2028</span><br>Acquérir les bases des systèmes, des réseaux et de la sécurité. Viser de bons résultats pour le dossier de poursuite d'études.</li>
+<li><b>Licence professionnelle cybersécurité ou 3e année de licence en informatique</b><span>[2028 – 2029], si possible en alternance</span><br>Gagner de l'expérience en entreprise et atteindre le niveau bac+3.</li>
+<li><b>Master en cybersécurité</b><span>[2029 – 2031]</span><br>Atteindre le niveau bac+5. Je cible les formations labellisées par l'ANSSI (SecNumedu).</li>
+</ul>
+<h3>Ce que je fais en attendant</h3>
+<ul><li>Apprentissage du langage C (OpenClassrooms, CS50 de Harvard)</li><li>Exercices de sécurité en ligne : [TryHackMe, Root-Me — à confirmer selon ce que vous faites vraiment]</li><li>Certification visée : [CCNA ou formation ANSSI]</li></ul>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p><b>Ville :</b> Metz<br>
+<b>Téléphone :</b> 06 16 61 82 14<br>
+<b>Courriel :</b> <a href="mailto:saidani.taslim@yahoo.com">saidani.taslim@yahoo.com</a><br>
+<b>GitHub :</b> <a href="https://github.com/milsatkiru-coder">github.com/milsatkiru-coder</a></p>
+<form onsubmit="var f=this;location.href='mailto:saidani.taslim@yahoo.com?subject='+encodeURIComponent(f.sujet.value)+'&body='+encodeURIComponent(f.msg.value);return false;">
+<label>Sujet<input name="sujet" required></label>
+<label>Message<textarea name="msg" rows="5" required></textarea></label>
+<button class="btn" type="submit">Envoyer par courriel</button>
+</form>
+</section>
+
+</main>
+<footer>Portfolio BTS SIO SISR — Taslim SAIDANI</footer>
+</body>
+</html>
